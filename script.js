@@ -2,6 +2,7 @@ const container = document.querySelector('#container');
 
 for (i = 1; i <= 16; i++) {
   div = document.createElement('div');
+  div.classList.add('pixel');
   container.appendChild(div);
 }
 
