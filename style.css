@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  width: 50px;
-  height: 50px;
+  width: 500px;
+  height: 500px;
 }
 
-.pixel {
+.pix {
   background-color: black;
 }
