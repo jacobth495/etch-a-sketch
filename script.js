@@ -2,7 +2,6 @@ const container = document.querySelector('#container');
 
 for (i = 1; i <= 16; i++) {
   div = document.createElement('div');
-  div.textContent = i;
   container.appendChild(div);
 }
 
