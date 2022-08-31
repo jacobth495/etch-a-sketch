@@ -15,6 +15,12 @@ for (let pixel of pixels) {
   });
 }
 
+const promptBtn = document.querySelector('#promptBtn');
+
+promptBtn.addEventListener('click', () => {
+  prompt('Enter a number 1 - 100')
+})
+
 
 //give div class name
 //add an event listener to the divs
