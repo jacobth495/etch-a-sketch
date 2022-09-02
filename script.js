@@ -6,22 +6,39 @@ for (i = 1; i <= 16; i++) {
   container.appendChild(div);
 };
 
+togglePixel();
 
-const pixels = document.querySelectorAll('#square')
-
-for (let pixel of pixels) {
-  pixel.addEventListener('mouseover', () => {
-    pixel.classList.toggle("pix")
-  });
-}
+document.rem
 
 const promptBtn = document.querySelector('#promptBtn');
 
 promptBtn.addEventListener('click', () => {
-  prompt('Enter a number 1 - 100')
-})
+  container.remove();
+  divs = containerTwo.querySelectorAll('#square');
+  divs.forEach(div => {
+    div.remove();
+  });
+  containerTwo.setAttribute('class', 'containerTwo');
+  userInput = prompt('Enter a number 1 - 100');
+  widthSize = Math.floor(Math.sqrt(userInput));
+  containerTwo.style.display = `grid`;
+  containerTwo.style.gridTemplateColumns = `repeat(${widthSize}, 1fr)`;
+  for (i = 1; i <= userInput; i++) {
+  div = document.createElement('div');
+  div.id = 'square'
+  containerTwo.appendChild(div);
+  };
+  togglePixel();
+  })
 
 
-//give div class name
-//add an event listener to the divs
-//if mouse hovers over div toggle css class on/off
+  function togglePixel() {
+ 
+    let pixels = document.querySelectorAll('#square')
+  
+    for (let pixel of pixels) {
+      pixel.addEventListener('mouseover', () => {
+        pixel.classList.toggle("pix")
+      });
+    }
+  }
