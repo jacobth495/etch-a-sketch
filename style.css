@@ -17,6 +17,17 @@ body {
   height: 500px;
   margin: auto;
   margin-top: 2em;
+  border-style: solid;
+  border-color: blue;
+}
+
+.containerTwo {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-top: 2em;
+  border-style: solid;
+  border-color: blue;
 }
 
 .pix {
